@@ -1,0 +1,166 @@
+* {box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    
+  }
+
+  img{
+    margin-left: 0%;
+   
+      }
+
+ #H1{
+    margin-top: -40%;
+    margin-left: 50%;
+    letter-spacing: 2px;
+    
+ }
+
+ #p1{
+    margin-left: 30%;
+    font-size:130%;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    color:#2E475D;
+ }
+
+ #H2{
+    margin-top: 1%;
+    margin-left: 70%;
+ }
+
+
+
+
+ .con1 {
+  position: relative;
+  
+  text-align: center;
+  color: white;
+ 
+
+}
+
+&::after{
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(to bottom right,blue , red);
+  opacity: 0.3;
+  z-index: 2;
+
+}
+
+.centered {
+  position: absolute;
+  top:13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  letter-spacing: 7px;
+  z-index: 5;
+
+}
+
+ .box2{
+ 
+   min-height: 200px;
+   min-width:100px;
+ }
+
+
+
+
+
+
+ .image-container {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.image {
+  position: relative;
+  width: 20%;
+  
+  margin: 30px; 
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text h2,
+.text p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 40%;
+}
+
+.image:hover .text {
+  opacity: 1;
+  border-radius: 25px;
+}
+
+
+
+ 
+
+
+
+.lines{
+  width: 100%;
+  height: 45px;
+  position: relative;
+}
+
+.lines::after, .lines::before{
+  content:'';
+  position:absolute;
+  margin: auto;
+  height: 5px;
+  background: #000000;
+  width: 25%;
+  top: 45%;
+}
+
+.lines::after{
+  left: 20%;
+}
+.lines::before{
+  right: 20%;
+}
+
+.circle{
+  height: 40px;
+  width: 40px;
+  border: 20px solid #ffbb00;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+

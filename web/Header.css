@@ -1,0 +1,94 @@
+body{
+	font-family:Bodoni MT;
+}
+
+
+.menu_bar{
+	background-color:navy;
+	height:55px;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:0 5%;
+	
+	
+}
+
+.menu_bar ul{
+	list-style:none;
+	display:flex;
+	
+}
+
+.menu_bar ul li{
+	padding:5px 30px;
+	position:relative;
+}
+
+.menu_bar ul li a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+	transition:all 0.3s;
+	
+}
+
+.menu_bar ul li a:hover{
+	color:rgb(238, 255, 0);
+}
+
+.dropdown_menu{
+	display:none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+	display:block;
+	position:absolute;
+	left:0;
+	top:100%;
+	background-color:black ;
+	z-index: 6;
+	
+}
+
+.menu_bar ul li:hover .dropdown_menu ul{
+	display:block;
+	margin:10px;
+}
+
+.dropdown_menu ul li{
+	width:150px;
+	padding:10px;
+}
+
+.fas{
+	float:right;
+	margin-left:10px;
+	padding-top:3px;
+}
+
+.dropdown_menu-1{
+	display:none;
+	
+}
+
+
+
+.dropdown_menu ul li:hover .dropdown_menu-1{
+	display:block;
+	position:absolute;
+	top:0;
+	left:150px;
+	background-color:black;
+	
+}
+
+.hero{
+	height:calc(100vh-80px);
+}
+
+#I{
+	width:50px;
+	margin-left: 0%;
+}
